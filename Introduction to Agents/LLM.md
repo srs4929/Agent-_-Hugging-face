@@ -124,5 +124,49 @@ In short, LLMs enable AI Agents to understand and generate human-like language, 
 
 **The LLM is the brain of the Agent.**
 
+# How Chat with AI Works
+
+- When you chat with AI (like ChatGPT), you send **messages** back and forth.
+- Inside the AI, all these messages get joined into one long text before the AI thinks and replies.
+- Special **markers** are added to show where each message starts and ends, so the AI knows who said what.
+
+## Types of Messages
+
+- **System Message:** Tells the AI how to behave (like being helpful or polite).
+- **User Message:** What you say.
+- **Assistant Message:** What the AI replies.
+
+## What is a Chat Template?
+
+- A chat template is a set of rules that puts messages into the right format for the AI to understand.
+- It adds the special markers and organizes the conversation properly.
+
+## Why It Matters
+
+- This helps the AI follow instructions and keep track of the conversation, making it feel like a real chat.
+
+## How It Works in Simple Steps
+
+1. You write messages.
+2. Messages get formatted with special markers (chat template).
+3. The AI reads the formatted conversation and replies.
+
+## Example
+
+Suppose you chat like this:
+
+- You: "Hi, can you help me?"
+- AI: "Sure! What do you need?"
+- You: "I want to know the weather."
+
+Before the AI processes it, it turns into something like this:
+
+```plaintext
+<|system|>You are a helpful assistant.<|end|>
+<|user|>Hi, can you help me?<|end|>
+<|assistant|>Sure! What do you need?<|end|>
+<|user|>I want to know the weather.<|end|>
+
+
 
   
