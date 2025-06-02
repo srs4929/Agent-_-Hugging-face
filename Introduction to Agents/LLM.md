@@ -83,5 +83,46 @@ The **attention mechanism** in Transformers helps the model focus on the most im
 
 These concepts allow LLMs to generate coherent and meaningful text.
 
+# Prompting and Training Large Language Models (LLMs)
+
+## Why Prompting Matters
+
+An LLM’s job is to predict the next token by looking at all the tokens in the input and deciding which are most important. This means **how you phrase your input — the prompt — matters a lot**.
+
+A well-designed prompt helps guide the model to give the answer you want.
+
+**Example:**  
+If you ask,  
+*“What is the capital of France?”*  
+you’re more likely to get a clear answer than if you say,  
+*“France capital?”*
+
+---
+
+## How Are LLMs Trained?
+
+LLMs learn by reading huge amounts of text and trying to guess the next word in sentences. This is called **self-supervised learning** because they learn from the data itself without needing human labels.
+
+Through this, the model understands language structure and patterns, which lets it handle new sentences it has never seen before.
+
+After this general training, LLMs can be **fine-tuned** for specific tasks like chatting, classifying text, or writing code.
+
+---
+
+This process enables LLMs to generate human-like text and perform many language-related tasks.
+# How Are LLMs Used in AI Agents?
+
+Large Language Models (LLMs) are the **core “brain”** of AI Agents. They help agents:
+
+- Understand user instructions  
+- Keep track of conversation context  
+- Make plans  
+- Decide which tools to use  
+
+In short, LLMs enable AI Agents to understand and generate human-like language, making interactions smooth and intelligent.
+
+
+**The LLM is the brain of the Agent.**
+
 
   
