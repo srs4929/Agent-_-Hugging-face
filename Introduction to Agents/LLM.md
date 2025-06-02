@@ -124,6 +124,8 @@ In short, LLMs enable AI Agents to understand and generate human-like language, 
 
 **The LLM is the brain of the Agent.**
 
+
+
 # How Chat with AI Works
 
 - When you chat with AI (like ChatGPT), you send **messages** back and forth.
@@ -166,6 +168,80 @@ Before the AI processes it, it turns into something like this:
 <|user|>Hi, can you help me?<|end|>
 <|assistant|>Sure! What do you need?<|end|>
 <|user|>I want to know the weather.<|end|>
+````
+
+# 🛠️ What Are Tools?
+
+
+
+One crucial aspect of AI Agents is their ability to **take actions**. This happens through the use of **Tools**.
+
+In this section, we’ll learn:
+
+- What Tools are
+- How to design them effectively
+- How to integrate them into your Agent via the System Message
+
+By giving your Agent the right Tools—and clearly describing how those Tools work—you can dramatically increase what your AI can accomplish. Let’s dive in!
+
+---
+
+## 🤖 What are AI Tools?
+
+A **Tool** is a function given to the LLM. This function should fulfill a **clear objective**.
+
+### 🔧 Common Tools in AI Agents
+
+| Tool            | Description                                             |
+|------------------|---------------------------------------------------------|
+| Web Search       | Fetch up-to-date info from the internet                 |
+| Image Generation | Create images from text descriptions                    |
+| Retrieval        | Retrieve info from an external source                   |
+| API Interface    | Interact with external APIs (e.g. GitHub, YouTube)      |
+
+
+
+---
+
+## 🧠 Why Use Tools?
+
+LLMs are powerful, but:
+
+- They’re limited to **pretrained knowledge**
+- They can **hallucinate** when asked about current events or real-time data
+- They **struggle** with precise tasks like arithmetic
+
+> 🔍 **Example**: To get today’s weather, you need a tool. Otherwise, the LLM may guess randomly.
+
+---
+
+## 🧪 Tool Structure
+
+A Tool should include:
+
+- ✅ **Name**: What it's called
+- 📝 **Description**: What it does
+- 🔡 **Arguments**: Input types and names
+- 📤 **Outputs**: Output type(s)
+- ⚙️ **Callable**: The actual function
+
+---
+
+## ⚙️ How Tools Work
+
+1. **LLMs can only read/write text** — they cannot actually *call* a function.
+2. The Agent (you) parses the LLM output and executes any tool calls on its behalf.
+3. The results are fed back to the LLM as additional input.
+
+> 💡 To the user, it looks like the LLM did everything itself!
+
+---
+
+## 🧾 Defining Tools via System Prompts
+
+To give a Tool to an LLM, describe it clearly in the **system prompt**:
+
+
 
 
 
